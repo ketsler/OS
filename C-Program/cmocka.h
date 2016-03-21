@@ -99,18 +99,18 @@ typedef uintmax_t LargestIntegralType;
 /* Smallest integral type capable of holding a pointer. */
 #if !defined(_UINTPTR_T) && !defined(_UINTPTR_T_DEFINED)
 # if defined(_WIN32)
-    /* WIN32 is an ILP32 platform */
+/* WIN32 is an ILP32 platform */
     typedef unsigned int uintptr_t;
 # elif defined(_WIN64)
-    typedef unsigned long int uintptr_t
+typedef unsigned long int uintptr_t
 # else /* _WIN32 */
 
 /* ILP32 and LP64 platforms */
 #  ifdef __WORDSIZE /* glibc */
 #   if __WORDSIZE == 64
-      typedef unsigned long int uintptr_t;
+typedef unsigned long int uintptr_t;
 #   else
-      typedef unsigned int uintptr_t;
+typedef unsigned int uintptr_t;
 #   endif /* __WORDSIZE == 64 */
 #  else /* __WORDSIZE */
 #   if defined(_LP64) || defined(_I32LPx)
@@ -1920,66 +1920,66 @@ LargestIntegralType _mock(const char * const function, const char* const file,
                           const int line);
 
 void _expect_check(
-    const char* const function, const char* const parameter,
-    const char* const file, const int line,
-    const CheckParameterValue check_function,
-    const LargestIntegralType check_data, CheckParameterEvent * const event,
-    const int count);
+        const char* const function, const char* const parameter,
+        const char* const file, const int line,
+        const CheckParameterValue check_function,
+        const LargestIntegralType check_data, CheckParameterEvent * const event,
+        const int count);
 
 void _expect_in_set(
-    const char* const function, const char* const parameter,
-    const char* const file, const int line, const LargestIntegralType values[],
-    const size_t number_of_values, const int count);
+        const char* const function, const char* const parameter,
+        const char* const file, const int line, const LargestIntegralType values[],
+        const size_t number_of_values, const int count);
 void _expect_not_in_set(
-    const char* const function, const char* const parameter,
-    const char* const file, const int line, const LargestIntegralType values[],
-    const size_t number_of_values, const int count);
+        const char* const function, const char* const parameter,
+        const char* const file, const int line, const LargestIntegralType values[],
+        const size_t number_of_values, const int count);
 
 void _expect_in_range(
-    const char* const function, const char* const parameter,
-    const char* const file, const int line,
-    const LargestIntegralType minimum,
-    const LargestIntegralType maximum, const int count);
+        const char* const function, const char* const parameter,
+        const char* const file, const int line,
+        const LargestIntegralType minimum,
+        const LargestIntegralType maximum, const int count);
 void _expect_not_in_range(
-    const char* const function, const char* const parameter,
-    const char* const file, const int line,
-    const LargestIntegralType minimum,
-    const LargestIntegralType maximum, const int count);
+        const char* const function, const char* const parameter,
+        const char* const file, const int line,
+        const LargestIntegralType minimum,
+        const LargestIntegralType maximum, const int count);
 
 void _expect_value(
-    const char* const function, const char* const parameter,
-    const char* const file, const int line, const LargestIntegralType value,
-    const int count);
+        const char* const function, const char* const parameter,
+        const char* const file, const int line, const LargestIntegralType value,
+        const int count);
 void _expect_not_value(
-    const char* const function, const char* const parameter,
-    const char* const file, const int line, const LargestIntegralType value,
-    const int count);
+        const char* const function, const char* const parameter,
+        const char* const file, const int line, const LargestIntegralType value,
+        const int count);
 
 void _expect_string(
-    const char* const function, const char* const parameter,
-    const char* const file, const int line, const char* string,
-    const int count);
+        const char* const function, const char* const parameter,
+        const char* const file, const int line, const char* string,
+        const int count);
 void _expect_not_string(
-    const char* const function, const char* const parameter,
-    const char* const file, const int line, const char* string,
-    const int count);
+        const char* const function, const char* const parameter,
+        const char* const file, const int line, const char* string,
+        const int count);
 
 void _expect_memory(
-    const char* const function, const char* const parameter,
-    const char* const file, const int line, const void* const memory,
-    const size_t size, const int count);
+        const char* const function, const char* const parameter,
+        const char* const file, const int line, const void* const memory,
+        const size_t size, const int count);
 void _expect_not_memory(
-    const char* const function, const char* const parameter,
-    const char* const file, const int line, const void* const memory,
-    const size_t size, const int count);
+        const char* const function, const char* const parameter,
+        const char* const file, const int line, const void* const memory,
+        const size_t size, const int count);
 
 void _expect_any(
-    const char* const function, const char* const parameter,
-    const char* const file, const int line, const int count);
+        const char* const function, const char* const parameter,
+        const char* const file, const int line, const int count);
 
 void _check_expected(
-    const char * const function_name, const char * const parameter_name,
-    const char* file, const int line, const LargestIntegralType value);
+        const char * const function_name, const char * const parameter_name,
+        const char* file, const int line, const LargestIntegralType value);
 
 void _will_return(const char * const function_name, const char * const file,
                   const int line, const LargestIntegralType value,
@@ -1994,11 +1994,11 @@ void _assert_return_code(const LargestIntegralType result,
                          const char * const file,
                          const int line);
 void _assert_int_equal(
-    const LargestIntegralType a, const LargestIntegralType b,
-    const char * const file, const int line);
+        const LargestIntegralType a, const LargestIntegralType b,
+        const char * const file, const int line);
 void _assert_int_not_equal(
-    const LargestIntegralType a, const LargestIntegralType b,
-    const char * const file, const int line);
+        const LargestIntegralType a, const LargestIntegralType b,
+        const char * const file, const int line);
 void _assert_string_equal(const char * const a, const char * const b,
                           const char * const file, const int line);
 void _assert_string_not_equal(const char * const a, const char * const b,
@@ -2010,17 +2010,17 @@ void _assert_memory_not_equal(const void * const a, const void * const b,
                               const size_t size, const char* const file,
                               const int line);
 void _assert_in_range(
-    const LargestIntegralType value, const LargestIntegralType minimum,
-    const LargestIntegralType maximum, const char* const file, const int line);
+        const LargestIntegralType value, const LargestIntegralType minimum,
+        const LargestIntegralType maximum, const char* const file, const int line);
 void _assert_not_in_range(
-    const LargestIntegralType value, const LargestIntegralType minimum,
-    const LargestIntegralType maximum, const char* const file, const int line);
+        const LargestIntegralType value, const LargestIntegralType minimum,
+        const LargestIntegralType maximum, const char* const file, const int line);
 void _assert_in_set(
-    const LargestIntegralType value, const LargestIntegralType values[],
-    const size_t number_of_values, const char* const file, const int line);
+        const LargestIntegralType value, const LargestIntegralType values[],
+        const size_t number_of_values, const char* const file, const int line);
 void _assert_not_in_set(
-    const LargestIntegralType value, const LargestIntegralType values[],
-    const size_t number_of_values, const char* const file, const int line);
+        const LargestIntegralType value, const LargestIntegralType values[],
+        const size_t number_of_values, const char* const file, const int line);
 
 void* _test_malloc(const size_t size, const char* file, const int line);
 void* _test_realloc(void *ptr, const size_t size, const char* file, const int line);
@@ -2033,9 +2033,9 @@ void _fail(const char * const file, const int line);
 void _skip(const char * const file, const int line);
 
 int _run_test(
-    const char * const function_name, const UnitTestFunction Function,
-    void ** const volatile state, const UnitTestFunctionType function_type,
-    const void* const heap_check_point);
+        const char * const function_name, const UnitTestFunction Function,
+        void ** const volatile state, const UnitTestFunctionType function_type,
+        const void* const heap_check_point);
 CMOCKA_DEPRECATED int _run_tests(const UnitTest * const tests,
                                  const size_t number_of_tests);
 CMOCKA_DEPRECATED int _run_group_tests(const UnitTest * const tests,

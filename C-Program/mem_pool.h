@@ -27,7 +27,7 @@ typedef struct _alloc {
 
 typedef struct _pool_segment {
     size_t size;
-    unsigned long allocated; // 1-allocation, 0-gap (note: 8 bytes)
+    unsigned long allocated; // 1-allocation, 0-gap
 } pool_segment_t, *pool_segment_pt;
 
 typedef enum _alloc_status {
@@ -40,24 +40,24 @@ typedef enum _alloc_status {
 /* function declarations */
 
 alloc_status
-mem_init();
+        mem_init();
 
 alloc_status
-mem_free();
+        mem_free();
 
 pool_pt
-mem_pool_open(size_t size, alloc_policy policy);
+        mem_pool_open(size_t size, alloc_policy policy);
 
 alloc_status
-mem_pool_close(pool_pt pool);
+        mem_pool_close(pool_pt pool);
 
 alloc_pt
-mem_new_alloc(pool_pt pool, size_t size);
+        mem_new_alloc(pool_pt pool, size_t size);
 
 alloc_status
-mem_del_alloc(pool_pt pool, alloc_pt alloc);
+        mem_del_alloc(pool_pt pool, alloc_pt alloc);
 
 void
-mem_inspect_pool(pool_pt pool, pool_segment_pt *segments, unsigned *num_segments);
+        mem_inspect_pool(pool_pt pool, pool_segment_pt *segments, unsigned *num_segments);
 
 #endif //DENVER_OS_PA_C_MEM_POOL_H
