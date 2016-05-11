@@ -1,0 +1,2177 @@
+/home/kyle/.CLion12/system/cmake/generated/d625a4f5/d625a4f5/Debug0/denver_os_pa_c
+TESTING STARTING[==========] Running 25 test(s).
+[ RUN      ] test_pool_store_smoketest
+[      --> ] Initializing pool store
+[  FAILED  ] test_pool_store_smoketest
+[ RUN      ] test_pool_smoketest
+[      --> ] Allocating pool of 1000000 bytes with policy BEST_FIT
+Asserting
+[      --> ] Closing pool
+[      --> ] Allocating pool of 2000000 bytes with policy FIRST_FIT
+Asserting
+[      --> ] Closing pool
+[      --> ] Allocating pool of 6000000 bytes with policy BEST_FIT
+Asserting
+[      --> ] Closing pool
+[      --> ] Allocating pool of 24000000 bytes with policy FIRST_FIT
+Asserting
+[      --> ] Closing pool
+[      --> ] Allocating pool of 120000000 bytes with policy BEST_FIT
+Asserting
+[      --> ] Closing pool
+[      --> ] Allocating pool of 720000000 bytes with policy FIRST_FIT
+Asserting
+[      --> ] Closing pool
+[       OK ] test_pool_smoketest
+[ RUN      ] test_pool_nonempty
+[      --> ] Allocating pool of 1000000 bytes with policy FIRST_FIT
+[      --> ] Allocating 100 bytes
+[      --> ] Trying to close pool...[      --> ]  failed.
+[      --> ] Deallocating 100 bytes
+   1000000 - gap
+
+[      --> ] Closing pool
+[       OK ] test_pool_nonempty
+[ RUN      ] test_pool_ff_metadata
+[      --> ] Allocating pool of 1000000 bytes with policy FIRST_FIT
+   1000000 - gap
+total_size = 1000000(1000000),
+alloc_size = 0(0),
+num_allocs = 0(0),
+  num_gaps = 1(1)
+Free Segments
+Checking Segments
+Checking Range
+0 0 
+1 1 
+Done Freeing Segments
+
+
+       100 - alloc
+    999900 - gap
+total_size = 1000000(1000000),
+alloc_size = 100(100),
+num_allocs = 1(1),
+  num_gaps = 1(1)
+Free Segments
+Checking Segments
+Checking Range
+1 1 
+1 1 
+Done Freeing Segments
+
+
+CHECKING TEST 3
+PRINTING SEGS LIST
+       100 - alloc
+      1000 - alloc
+    998900 - gap
+
+-----------------------
+PRINTING EXP LIST
+       100 - alloc
+      1000 - alloc
+    998900 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+       100 - alloc
+      1000 - alloc
+    998900 - gap
+total_size = 1000000(1000000),
+alloc_size = 1100(1100),
+num_allocs = 2(2),
+  num_gaps = 1(1)
+Free Segments
+Checking Segments
+Checking Range
+2 2 
+1 1 
+Done Freeing Segments
+
+
+CHECKING TEST 4
+       100 - alloc
+      1000 - alloc
+     10000 - alloc
+    988900 - gap
+total_size = 1000000(1000000),
+alloc_size = 11100(11100),
+num_allocs = 3(3),
+  num_gaps = 1(1)
+Free Segments
+Checking Segments
+Checking Range
+3 3 
+1 1 
+Done Freeing Segments
+
+
+CHECKING TEST 5
+PRINTING SEGS LIST
+       100 - alloc
+      1000 - gap
+     10000 - alloc
+    988900 - gap
+
+-----------------------
+PRINTING EXP LIST
+       100 - alloc
+      1000 - gap
+     10000 - alloc
+    988900 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+       100 - alloc
+      1000 - gap
+     10000 - alloc
+    988900 - gap
+total_size = 1000000(1000000),
+alloc_size = 10100(10100),
+num_allocs = 2(2),
+  num_gaps = 2(2)
+Free Segments
+Checking Segments
+Checking Range
+2 2 
+2 2 
+Done Freeing Segments
+
+
+CHECKING TEST 6
+PRINTING SEGS LIST
+      1100 - gap
+     10000 - alloc
+    988900 - gap
+
+-----------------------
+PRINTING EXP LIST
+      1100 - gap
+     10000 - alloc
+    988900 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+      1100 - gap
+     10000 - alloc
+    988900 - gap
+total_size = 1000000(1000000),
+alloc_size = 10000(10000),
+num_allocs = 1(1),
+  num_gaps = 2(2)
+Free Segments
+Checking Segments
+Checking Range
+1 1 
+2 2 
+Done Freeing Segments
+
+
+CHECKING TEST 7
+PRINTING SEGS LIST
+      1100 - alloc
+     10000 - alloc
+    988900 - gap
+
+-----------------------
+PRINTING EXP LIST
+      1100 - alloc
+     10000 - alloc
+    988900 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+      1100 - alloc
+     10000 - alloc
+    988900 - gap
+total_size = 1000000(1000000),
+alloc_size = 11100(11100),
+num_allocs = 2(2),
+  num_gaps = 1(1)
+Free Segments
+Checking Segments
+Checking Range
+2 2 
+1 1 
+Done Freeing Segments
+
+
+CHECKING TEST 8
+PRINTING SEGS LIST
+      1100 - alloc
+    998900 - gap
+
+-----------------------
+PRINTING EXP LIST
+      1100 - alloc
+    998900 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+      1100 - alloc
+    998900 - gap
+total_size = 1000000(1000000),
+alloc_size = 1100(1100),
+num_allocs = 1(1),
+  num_gaps = 1(1)
+Free Segments
+Checking Segments
+Checking Range
+1 1 
+1 1 
+Done Freeing Segments
+
+
+   1000000 - gap
+total_size = 1000000(1000000),
+alloc_size = 0(0),
+num_allocs = 0(0),
+  num_gaps = 1(1)
+Free Segments
+Checking Segments
+Checking Range
+0 0 
+1 1 
+Done Freeing Segments
+
+
+[      --> ] Closing pool
+[       OK ] test_pool_ff_metadata
+[ RUN      ] test_pool_bf_metadata
+[      --> ] Allocating pool of 1000000 bytes with policy BEST_FIT
+   1000000 - gap
+total_size = 1000000(1000000),
+alloc_size = 0(0),
+num_allocs = 0(0),
+  num_gaps = 1(1)
+Free Segments
+Checking Segments
+Checking Range
+0 0 
+1 1 
+Done Freeing Segments
+
+
+POOL CREATED
+Adding Allocs
+Test 1
+       100 - alloc
+       300 - gap
+       100 - alloc
+       200 - gap
+       100 - alloc
+       100 - gap
+       100 - alloc
+    999000 - gap
+total_size = 1000000(1000000),
+alloc_size = 400(400),
+num_allocs = 4(4),
+  num_gaps = 4(4)
+Free Segments
+Checking Segments
+Checking Range
+4 4 
+4 4 
+Done Freeing Segments
+
+
+Test 2
+       100 - alloc
+       300 - gap
+       100 - alloc
+       200 - gap
+       100 - alloc
+        50 - alloc
+        50 - gap
+       100 - alloc
+    999000 - gap
+total_size = 1000000(1000000),
+alloc_size = 450(450),
+num_allocs = 5(5),
+  num_gaps = 4(4)
+Free Segments
+Checking Segments
+Checking Range
+5 5 
+4 4 
+Done Freeing Segments
+
+
+Test 3
+       100 - alloc
+       300 - gap
+       100 - alloc
+       200 - gap
+       100 - alloc
+        50 - alloc
+        50 - alloc
+       100 - alloc
+    999000 - gap
+total_size = 1000000(1000000),
+alloc_size = 500(500),
+num_allocs = 6(6),
+  num_gaps = 3(3)
+Free Segments
+Checking Segments
+Checking Range
+6 6 
+3 3 
+Done Freeing Segments
+
+
+Cleaning Up
+   1000000 - gap
+total_size = 1000000(1000000),
+alloc_size = 0(0),
+num_allocs = 0(0),
+  num_gaps = 1(1)
+Free Segments
+Checking Segments
+Checking Range
+0 0 
+1 1 
+Done Freeing Segments
+
+
+[      --> ] Closing pool
+Done Freeing All Memory
+COMPLETED!
+[       OK ] test_pool_bf_metadata
+[ RUN      ] test_pool_scenario00
+[      --> ] Allocating pool of 1000000 bytes with policy FIRST_FIT
+Performing Initial Allocation
+PRINTING SEGS LIST
+   1000000 - gap
+
+-----------------------
+PRINTING EXP LIST
+   1000000 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+Allocating 100
+PRINTING SEGS LIST
+       100 - alloc
+    999900 - gap
+
+-----------------------
+PRINTING EXP LIST
+       100 - alloc
+    999900 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+Deleting Allocation
+PRINTING SEGS LIST
+   1000000 - gap
+
+-----------------------
+PRINTING EXP LIST
+   1000000 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+[      --> ] Closing pool
+[       OK ] test_pool_scenario00
+[ RUN      ] test_pool_scenario01
+[      --> ] Allocating pool of 1000000 bytes with policy FIRST_FIT
+PRINTING SEGS LIST
+   1000000 - gap
+
+-----------------------
+PRINTING EXP LIST
+   1000000 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+       100 - alloc
+    999900 - gap
+
+-----------------------
+PRINTING EXP LIST
+       100 - alloc
+    999900 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+   1000000 - gap
+
+-----------------------
+PRINTING EXP LIST
+   1000000 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+       100 - alloc
+    999900 - gap
+
+-----------------------
+PRINTING EXP LIST
+       100 - alloc
+    999900 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+   1000000 - gap
+
+-----------------------
+PRINTING EXP LIST
+   1000000 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+[      --> ] Closing pool
+[       OK ] test_pool_scenario01
+[ RUN      ] test_pool_scenario02
+[      --> ] Allocating pool of 1000000 bytes with policy FIRST_FIT
+PRINTING SEGS LIST
+   1000000 - gap
+
+-----------------------
+PRINTING EXP LIST
+   1000000 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+       100 - alloc
+    999900 - gap
+
+-----------------------
+PRINTING EXP LIST
+       100 - alloc
+    999900 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+       100 - alloc
+      1000 - alloc
+    998900 - gap
+
+-----------------------
+PRINTING EXP LIST
+       100 - alloc
+      1000 - alloc
+    998900 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+       100 - alloc
+    999900 - gap
+
+-----------------------
+PRINTING EXP LIST
+       100 - alloc
+    999900 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+   1000000 - gap
+
+-----------------------
+PRINTING EXP LIST
+   1000000 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+[      --> ] Closing pool
+[       OK ] test_pool_scenario02
+[ RUN      ] test_pool_scenario03
+[      --> ] Allocating pool of 1000000 bytes with policy FIRST_FIT
+PRINTING SEGS LIST
+   1000000 - gap
+
+-----------------------
+PRINTING EXP LIST
+   1000000 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+       100 - alloc
+    999900 - gap
+
+-----------------------
+PRINTING EXP LIST
+       100 - alloc
+    999900 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+       100 - alloc
+      1000 - alloc
+    998900 - gap
+
+-----------------------
+PRINTING EXP LIST
+       100 - alloc
+      1000 - alloc
+    998900 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+       100 - gap
+      1000 - alloc
+    998900 - gap
+
+-----------------------
+PRINTING EXP LIST
+       100 - gap
+      1000 - alloc
+    998900 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+   1000000 - gap
+
+-----------------------
+PRINTING EXP LIST
+   1000000 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+[      --> ] Closing pool
+[       OK ] test_pool_scenario03
+[ RUN      ] test_pool_scenario04
+[      --> ] Allocating pool of 1000000 bytes with policy FIRST_FIT
+PRINTING SEGS LIST
+   1000000 - gap
+
+-----------------------
+PRINTING EXP LIST
+   1000000 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+       100 - alloc
+    999900 - gap
+
+-----------------------
+PRINTING EXP LIST
+       100 - alloc
+    999900 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+       100 - alloc
+      1000 - alloc
+    998900 - gap
+
+-----------------------
+PRINTING EXP LIST
+       100 - alloc
+      1000 - alloc
+    998900 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+       100 - alloc
+      1000 - alloc
+     10000 - alloc
+    988900 - gap
+
+-----------------------
+PRINTING EXP LIST
+       100 - alloc
+      1000 - alloc
+     10000 - alloc
+    988900 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+       100 - alloc
+      1000 - gap
+     10000 - alloc
+    988900 - gap
+
+-----------------------
+PRINTING EXP LIST
+       100 - alloc
+      1000 - gap
+     10000 - alloc
+    988900 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+      1100 - gap
+     10000 - alloc
+    988900 - gap
+
+-----------------------
+PRINTING EXP LIST
+      1100 - gap
+     10000 - alloc
+    988900 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+   1000000 - gap
+
+-----------------------
+PRINTING EXP LIST
+   1000000 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+[      --> ] Closing pool
+[       OK ] test_pool_scenario04
+[ RUN      ] test_pool_scenario05
+[      --> ] Allocating pool of 1000000 bytes with policy FIRST_FIT
+PRINTING SEGS LIST
+   1000000 - gap
+
+-----------------------
+PRINTING EXP LIST
+   1000000 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+       100 - alloc
+    999900 - gap
+
+-----------------------
+PRINTING EXP LIST
+       100 - alloc
+    999900 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+       100 - alloc
+      1000 - alloc
+    998900 - gap
+
+-----------------------
+PRINTING EXP LIST
+       100 - alloc
+      1000 - alloc
+    998900 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+       100 - alloc
+      1000 - alloc
+     10000 - alloc
+    988900 - gap
+
+-----------------------
+PRINTING EXP LIST
+       100 - alloc
+      1000 - alloc
+     10000 - alloc
+    988900 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+Locating Infinite Loop
+PRINTING SEGS LIST
+       100 - alloc
+      1000 - gap
+     10000 - alloc
+    988900 - gap
+
+-----------------------
+PRINTING EXP LIST
+       100 - alloc
+      1000 - gap
+     10000 - alloc
+    988900 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+NUMBER 6
+PRINTING SEGS LIST
+      1100 - gap
+     10000 - alloc
+    988900 - gap
+
+-----------------------
+PRINTING EXP LIST
+      1100 - gap
+     10000 - alloc
+    988900 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+Number 7
+Checking Number 7 Pool
+PRINTING SEGS LIST
+      1100 - gap
+     10000 - alloc
+      2000 - alloc
+    986900 - gap
+
+-----------------------
+PRINTING EXP LIST
+      1100 - gap
+     10000 - alloc
+      2000 - alloc
+    986900 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+Number 8
+PRINTING SEGS LIST
+     11100 - gap
+      2000 - alloc
+    986900 - gap
+
+-----------------------
+PRINTING EXP LIST
+     11100 - gap
+      2000 - alloc
+    986900 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+   1000000 - gap
+
+-----------------------
+PRINTING EXP LIST
+   1000000 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+[      --> ] Closing pool
+[       OK ] test_pool_scenario05
+[ RUN      ] test_pool_scenario06
+[      --> ] Allocating pool of 1000000 bytes with policy FIRST_FIT
+PRINTING SEGS LIST
+   1000000 - gap
+
+-----------------------
+PRINTING EXP LIST
+   1000000 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+       100 - alloc
+    999900 - gap
+
+-----------------------
+PRINTING EXP LIST
+       100 - alloc
+    999900 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+       100 - alloc
+      1000 - alloc
+    998900 - gap
+
+-----------------------
+PRINTING EXP LIST
+       100 - alloc
+      1000 - alloc
+    998900 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+       100 - alloc
+      1000 - alloc
+     10000 - alloc
+    988900 - gap
+
+-----------------------
+PRINTING EXP LIST
+       100 - alloc
+      1000 - alloc
+     10000 - alloc
+    988900 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+       100 - alloc
+      1000 - gap
+     10000 - alloc
+    988900 - gap
+
+-----------------------
+PRINTING EXP LIST
+       100 - alloc
+      1000 - gap
+     10000 - alloc
+    988900 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+P0 != 0x2
+/home/kyle/Development/git-repost/OS/C-Program/test_suite.c:156: error: Failure!
+
+RINTING SEGS LIST
+      1100 - gap
+     10000 - alloc
+    988900 - gap
+
+-----------------------
+PRINTING EXP LIST
+      1100 - gap
+     10000 - alloc
+    988900 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+       500 - alloc
+       600 - gap
+     10000 - alloc
+    988900 - gap
+
+-----------------------
+PRINTING EXP LIST
+       500 - alloc
+       600 - gap
+     10000 - alloc
+    988900 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+       500 - alloc
+    999500 - gap
+
+-----------------------
+PRINTING EXP LIST
+       500 - alloc
+    999500 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+   1000000 - gap
+
+-----------------------
+PRINTING EXP LIST
+   1000000 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+[      --> ] Closing pool
+[       OK ] test_pool_scenario06
+[ RUN      ] test_pool_scenario07
+[      --> ] Allocating pool of 1000000 bytes with policy FIRST_FIT
+PRINTING SEGS LIST
+   1000000 - gap
+
+-----------------------
+PRINTING EXP LIST
+   1000000 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+       100 - alloc
+    999900 - gap
+
+-----------------------
+PRINTING EXP LIST
+       100 - alloc
+    999900 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+       100 - alloc
+      1000 - alloc
+    998900 - gap
+
+-----------------------
+PRINTING EXP LIST
+       100 - alloc
+      1000 - alloc
+    998900 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+       100 - alloc
+      1000 - alloc
+     10000 - alloc
+    988900 - gap
+
+-----------------------
+PRINTING EXP LIST
+       100 - alloc
+      1000 - alloc
+     10000 - alloc
+    988900 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+       100 - alloc
+      1000 - gap
+     10000 - alloc
+    988900 - gap
+
+-----------------------
+PRINTING EXP LIST
+       100 - alloc
+      1000 - gap
+     10000 - alloc
+    988900 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+      1100 - gap
+     10000 - alloc
+    988900 - gap
+
+-----------------------
+PRINTING EXP LIST
+      1100 - gap
+     10000 - alloc
+    988900 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+      1100 - alloc
+     10000 - alloc
+    988900 - gap
+
+-----------------------
+PRINTING EXP LIST
+      1100 - alloc
+     10000 - alloc
+    988900 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+      1100 - alloc
+    998900 - gap
+
+-----------------------
+PRINTING EXP LIST
+      1100 - alloc
+    998900 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+   1000000 - gap
+
+-----------------------
+PRINTING EXP LIST
+   1000000 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+[      --> ] Closing pool
+[       OK ] test_pool_scenario07
+[ RUN      ] test_pool_scenario08
+[      --> ] Allocating pool of 1000000 bytes with policy FIRST_FIT
+PRINTING SEGS LIST
+   1000000 - gap
+
+-----------------------
+PRINTING EXP LIST
+   1000000 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+       100 - alloc
+    999900 - gap
+
+-----------------------
+PRINTING EXP LIST
+       100 - alloc
+    999900 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+       100 - alloc
+      1000 - alloc
+    998900 - gap
+
+-----------------------
+PRINTING EXP LIST
+       100 - alloc
+      1000 - alloc
+    998900 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+       100 - alloc
+      1000 - alloc
+     10000 - alloc
+    988900 - gap
+
+-----------------------
+PRINTING EXP LIST
+       100 - alloc
+      1000 - alloc
+     10000 - alloc
+    988900 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+       100 - alloc
+      1000 - gap
+     10000 - alloc
+    988900 - gap
+
+-----------------------
+PRINTING EXP LIST
+       100 - alloc
+      1000 - gap
+     10000 - alloc
+    988900 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+      1100 - gap
+     10000 - alloc
+    988900 - gap
+
+-----------------------
+PRINTING EXP LIST
+      1100 - gap
+     10000 - alloc
+    988900 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+      1100 - gap
+     10000 - alloc
+    988900 - gap
+
+-----------------------
+PRINTING EXP LIST
+      1100 - gap
+     10000 - alloc
+    988900 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+   1000000 - gap
+
+-----------------------
+PRINTING EXP LIST
+   1000000 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+[      --> ] Closing pool
+[       OK ] test_pool_scenario08
+[ RUN      ] test_pool_scenario09
+[      --> ] Allocating pool of 1000000 bytes with policy FIRST_FIT
+PRINTING SEGS LIST
+   1000000 - gap
+
+-----------------------
+PRINTING EXP LIST
+   1000000 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+       100 - alloc
+    999900 - gap
+
+-----------------------
+PRINTING EXP LIST
+       100 - alloc
+    999900 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+       100 - alloc
+      1000 - alloc
+    998900 - gap
+
+-----------------------
+PRINTING EXP LIST
+       100 - alloc
+      1000 - alloc
+    998900 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+       100 - alloc
+      1000 - alloc
+     10000 - alloc
+    988900 - gap
+
+-----------------------
+PRINTING EXP LIST
+       100 - alloc
+      1000 - alloc
+     10000 - alloc
+    988900 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+       100 - alloc
+      1000 - gap
+     10000 - alloc
+    988900 - gap
+
+-----------------------
+PRINTING EXP LIST
+       100 - alloc
+      1000 - gap
+     10000 - alloc
+    988900 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+      1100 - gap
+     10000 - alloc
+    988900 - gap
+
+-----------------------
+PRINTING EXP LIST
+      1100 - gap
+     10000 - alloc
+    988900 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+      1100 - gap
+     10000 - alloc
+    988000 - alloc
+       900 - gap
+
+-----------------------
+PRINTING EXP LIST
+      1100 - gap
+     10000 - alloc
+    988000 - alloc
+       900 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+     11100 - gap
+    988000 - alloc
+       900 - gap
+
+-----------------------
+PRINTING EXP LIST
+     11100 - gap
+    988000 - alloc
+       900 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+   1000000 - gap
+
+-----------------------
+PRINTING EXP LIST
+   1000000 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+[      --> ] Closing pool
+[       OK ] test_pool_scenario09
+[ RUN      ] test_pool_scenario10
+[      --> ] Allocating pool of 1000000 bytes with policy FIRST_FIT
+PRINTING SEGS LIST
+   1000000 - gap
+
+-----------------------
+PRINTING EXP LIST
+   1000000 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+       100 - alloc
+    999900 - gap
+
+-----------------------
+PRINTING EXP LIST
+       100 - alloc
+    999900 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+       100 - alloc
+      1000 - alloc
+    998900 - gap
+
+-----------------------
+PRINTING EXP LIST
+       100 - alloc
+      1000 - alloc
+    998900 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+       100 - alloc
+      1000 - alloc
+     10000 - alloc
+    988900 - gap
+
+-----------------------
+PRINTING EXP LIST
+       100 - alloc
+      1000 - alloc
+     10000 - alloc
+    988900 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+       100 - alloc
+      1000 - gap
+     10000 - alloc
+    988900 - gap
+
+-----------------------
+PRINTING EXP LIST
+       100 - alloc
+      1000 - gap
+     10000 - alloc
+    988900 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+      1100 - gap
+     10000 - alloc
+    988900 - gap
+
+-----------------------
+PRINTING EXP LIST
+      1100 - gap
+     10000 - alloc
+    988900 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+      1100 - gap
+     10000 - alloc
+    988900 - alloc
+
+-----------------------
+PRINTING EXP LIST
+      1100 - gap
+     10000 - alloc
+    988900 - alloc
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+     11100 - gap
+    988900 - alloc
+
+-----------------------
+PRINTING EXP LIST
+     11100 - gap
+    988900 - alloc
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+   1000000 - gap
+
+-----------------------
+PRINTING EXP LIST
+   1000000 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+[      --> ] Closing pool
+[       OK ] test_pool_scenario10
+[ RUN      ] test_pool_scenario11
+[      --> ] Allocating pool of 1000000 bytes with policy BEST_FIT
+PRINTING SEGS LIST
+   1000000 - gap
+
+-----------------------
+PRINTING EXP LIST
+   1000000 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+       100 - alloc
+    999900 - gap
+
+-----------------------
+PRINTING EXP LIST
+       100 - alloc
+    999900 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+   1000000 - gap
+
+-----------------------
+PRINTING EXP LIST
+   1000000 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+[      --> ] Closing pool
+Done Freeing All Memory
+COMPLETED!
+[       OK ] test_pool_scenario11
+[ RUN      ] test_pool_scenario12
+[      --> ] Allocating pool of 1000000 bytes with policy BEST_FIT
+PRINTING SEGS LIST
+   1000000 - gap
+
+-----------------------
+PRINTING EXP LIST
+   1000000 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+       100 - alloc
+       200 - gap
+       100 - alloc
+       100 - gap
+       100 - alloc
+       300 - gap
+       100 - alloc
+    999000 - gap
+
+-----------------------
+PRINTING EXP LIST
+       100 - alloc
+       200 - gap
+       100 - alloc
+       100 - gap
+       100 - alloc
+       300 - gap
+       100 - alloc
+    999000 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+       100 - alloc
+       200 - gap
+       100 - alloc
+       100 - alloc
+       100 - alloc
+       300 - gap
+       100 - alloc
+    999000 - gap
+
+-----------------------
+PRINTING EXP LIST
+       100 - alloc
+       200 - gap
+       100 - alloc
+       100 - alloc
+       100 - alloc
+       300 - gap
+       100 - alloc
+    999000 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+   1000000 - gap
+
+-----------------------
+PRINTING EXP LIST
+   1000000 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+[      --> ] Closing pool
+Done Freeing All Memory
+COMPLETED!
+[       OK ] test_pool_scenario12
+[ RUN      ] test_pool_scenario13
+[      --> ] Allocating pool of 1000000 bytes with policy BEST_FIT
+PRINTING SEGS LIST
+   1000000 - gap
+
+-----------------------
+PRINTING EXP LIST
+   1000000 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+       100 - alloc
+       100 - gap
+       100 - alloc
+       100 - alloc
+       100 - gap
+       100 - alloc
+       300 - gap
+       100 - alloc
+    999000 - gap
+
+-----------------------
+PRINTING EXP LIST
+       100 - alloc
+       100 - gap
+       100 - alloc
+       100 - alloc
+       100 - gap
+       100 - alloc
+       300 - gap
+       100 - alloc
+    999000 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+       100 - alloc
+       100 - alloc
+       100 - alloc
+       100 - alloc
+       100 - gap
+       100 - alloc
+       300 - gap
+       100 - alloc
+    999000 - gap
+
+-----------------------
+PRINTING EXP LIST
+       100 - alloc
+       100 - alloc
+       100 - alloc
+       100 - alloc
+       100 - gap
+       100 - alloc
+       300 - gap
+       100 - alloc
+    999000 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+   1000000 - gap
+
+-----------------------
+PRINTING EXP LIST
+   1000000 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+[      --> ] Closing pool
+Done Freeing All Memory
+COMPLETED!
+[       OK ] test_pool_scenario13
+[ RUN      ] test_pool_scenario14
+[      --> ] Allocating pool of 1000000 bytes with policy BEST_FIT
+PRINTING SEGS LIST
+   1000000 - gap
+
+-----------------------
+PRINTING EXP LIST
+   1000000 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+       100 - alloc
+       100 - gap
+       100 - alloc
+       100 - alloc
+       100 - gap
+       100 - alloc
+       300 - gap
+       100 - alloc
+    999000 - gap
+
+-----------------------
+PRINTING EXP LIST
+       100 - alloc
+       100 - gap
+       100 - alloc
+       100 - alloc
+       100 - gap
+       100 - alloc
+       300 - gap
+       100 - alloc
+    999000 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+       100 - alloc
+       100 - alloc
+       100 - alloc
+       100 - alloc
+       100 - gap
+       100 - alloc
+       300 - gap
+       100 - alloc
+    999000 - gap
+
+-----------------------
+PRINTING EXP LIST
+       100 - alloc
+       100 - alloc
+       100 - alloc
+       100 - alloc
+       100 - gap
+       100 - alloc
+       300 - gap
+       100 - alloc
+    999000 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+   1000000 - gap
+
+-----------------------
+PRINTING EXP LIST
+   1000000 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+[      --> ] Closing pool
+Done Freeing All Memory
+COMPLETED!
+[       OK ] test_pool_scenario14
+[ RUN      ] test_pool_scenario15
+[      --> ] Allocating pool of 1000000 bytes with policy BEST_FIT
+PRINTING SEGS LIST
+   1000000 - gap
+
+-----------------------
+PRINTING EXP LIST
+   1000000 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+       100 - alloc
+       200 - gap
+       100 - alloc
+       100 - gap
+       100 - alloc
+       300 - gap
+       100 - alloc
+    999000 - gap
+
+-----------------------
+PRINTING EXP LIST
+       100 - alloc
+       200 - gap
+       100 - alloc
+       100 - gap
+       100 - alloc
+       300 - gap
+       100 - alloc
+    999000 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+       100 - alloc
+       200 - gap
+       100 - alloc
+        50 - alloc
+        50 - gap
+       100 - alloc
+       300 - gap
+       100 - alloc
+    999000 - gap
+
+-----------------------
+PRINTING EXP LIST
+       100 - alloc
+       200 - gap
+       100 - alloc
+        50 - alloc
+        50 - gap
+       100 - alloc
+       300 - gap
+       100 - alloc
+    999000 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+       100 - alloc
+       200 - gap
+       100 - alloc
+        50 - alloc
+        50 - alloc
+       100 - alloc
+       300 - gap
+       100 - alloc
+    999000 - gap
+
+-----------------------
+PRINTING EXP LIST
+       100 - alloc
+       200 - gap
+       100 - alloc
+        50 - alloc
+        50 - alloc
+       100 - alloc
+       300 - gap
+       100 - alloc
+    999000 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+   1000000 - gap
+
+-----------------------
+PRINTING EXP LIST
+   1000000 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+[      --> ] Closing pool
+Done Freeing All Memory
+COMPLETED!
+[       OK ] test_pool_scenario15
+[ RUN      ] test_pool_scenario16
+[      --> ] Allocating pool of 1000000 bytes with policy BEST_FIT
+PRINTING SEGS LIST
+   1000000 - gap
+
+-----------------------
+PRINTING EXP LIST
+   1000000 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+       100 - alloc
+       100 - gap
+       100 - alloc
+       100 - gap
+       100 - alloc
+       100 - gap
+       100 - alloc
+       100 - gap
+       100 - alloc
+       100 - alloc
+    999000 - gap
+
+-----------------------
+PRINTING EXP LIST
+       100 - alloc
+       100 - gap
+       100 - alloc
+       100 - gap
+       100 - alloc
+       100 - gap
+       100 - alloc
+       100 - gap
+       100 - alloc
+       100 - alloc
+    999000 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+       100 - alloc
+        50 - alloc
+        50 - gap
+       100 - alloc
+       100 - gap
+       100 - alloc
+       100 - gap
+       100 - alloc
+       100 - gap
+       100 - alloc
+       100 - alloc
+    999000 - gap
+
+-----------------------
+PRINTING EXP LIST
+       100 - alloc
+        50 - alloc
+        50 - gap
+       100 - alloc
+       100 - gap
+       100 - alloc
+       100 - gap
+       100 - alloc
+       100 - gap
+       100 - alloc
+       100 - alloc
+    999000 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+       100 - alloc
+        50 - alloc
+        50 - alloc
+       100 - alloc
+       100 - gap
+       100 - alloc
+       100 - gap
+       100 - alloc
+       100 - gap
+       100 - alloc
+       100 - alloc
+    999000 - gap
+
+-----------------------
+PRINTING EXP LIST
+       100 - alloc
+        50 - alloc
+        50 - alloc
+       100 - alloc
+       100 - gap
+       100 - alloc
+       100 - gap
+       100 - alloc
+       100 - gap
+       100 - alloc
+       100 - alloc
+    999000 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+   1000000 - gap
+
+-----------------------
+PRINTING EXP LIST
+   1000000 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+[      --> ] Closing pool
+Done Freeing All Memory
+COMPLETED!
+[       OK ] test_pool_scenario16
+[ RUN      ] test_pool_scenario17
+[      --> ] Allocating pool of 1000000 bytes with policy BEST_FIT
+PRINTING SEGS LIST
+   1000000 - gap
+
+-----------------------
+PRINTING EXP LIST
+   1000000 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+       100 - alloc
+       300 - gap
+       100 - alloc
+       200 - gap
+       100 - alloc
+       100 - gap
+       100 - alloc
+    999000 - gap
+
+-----------------------
+PRINTING EXP LIST
+       100 - alloc
+       300 - gap
+       100 - alloc
+       200 - gap
+       100 - alloc
+       100 - gap
+       100 - alloc
+    999000 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+       100 - alloc
+       300 - gap
+       100 - alloc
+       200 - gap
+       100 - alloc
+        50 - alloc
+        50 - gap
+       100 - alloc
+    999000 - gap
+
+-----------------------
+PRINTING EXP LIST
+       100 - alloc
+       300 - gap
+       100 - alloc
+       200 - gap
+       100 - alloc
+        50 - alloc
+        50 - gap
+       100 - alloc
+    999000 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+       100 - alloc
+       300 - gap
+       100 - alloc
+       200 - gap
+       100 - alloc
+        50 - alloc
+        50 - alloc
+       100 - alloc
+    999000 - gap
+
+-----------------------
+PRINTING EXP LIST
+       100 - alloc
+       300 - gap
+       100 - alloc
+       200 - gap
+       100 - alloc
+        50 - alloc
+        50 - alloc
+       100 - alloc
+    999000 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+   1000000 - gap
+
+-----------------------
+PRINTING EXP LIST
+   1000000 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+[      --> ] Closing pool
+Done Freeing All Memory
+COMPLETED!
+[       OK ] test_pool_scenario17
+[ RUN      ] test_pool_scenario18
+[      --> ] Allocating pool of 1000000 bytes with policy BEST_FIT
+PRINTING SEGS LIST
+   1000000 - gap
+
+-----------------------
+PRINTING EXP LIST
+   1000000 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+       100 - alloc
+       300 - gap
+       100 - alloc
+       200 - gap
+       100 - alloc
+       100 - gap
+       100 - alloc
+    999000 - gap
+
+-----------------------
+PRINTING EXP LIST
+       100 - alloc
+       300 - gap
+       100 - alloc
+       200 - gap
+       100 - alloc
+       100 - gap
+       100 - alloc
+    999000 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+       100 - alloc
+       300 - gap
+       100 - alloc
+       200 - gap
+       100 - alloc
+       100 - gap
+       100 - alloc
+    999000 - alloc
+
+-----------------------
+PRINTING EXP LIST
+       100 - alloc
+       300 - gap
+       100 - alloc
+       200 - gap
+       100 - alloc
+       100 - gap
+       100 - alloc
+    999000 - alloc
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+       100 - alloc
+       300 - gap
+       100 - alloc
+       200 - gap
+       100 - alloc
+       100 - gap
+       100 - alloc
+    999000 - alloc
+
+-----------------------
+PRINTING EXP LIST
+       100 - alloc
+       300 - gap
+       100 - alloc
+       200 - gap
+       100 - alloc
+       100 - gap
+       100 - alloc
+    999000 - alloc
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+   1000000 - gap
+
+-----------------------
+PRINTING EXP LIST
+   1000000 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+[      --> ] Closing pool
+Done Freeing All Memory
+COMPLETED!
+[       OK ] test_pool_scenario18
+[ RUN      ] test_pool_scenario19
+[      --> ] Allocating pool of 1000000 bytes with policy BEST_FIT
+PRINTING SEGS LIST
+   1000000 - gap
+
+-----------------------
+PRINTING EXP LIST
+   1000000 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+       100 - alloc
+       300 - gap
+       100 - alloc
+       200 - gap
+       100 - alloc
+       100 - gap
+       100 - alloc
+    999000 - gap
+
+-----------------------
+PRINTING EXP LIST
+       100 - alloc
+       300 - gap
+       100 - alloc
+       200 - gap
+       100 - alloc
+       100 - gap
+       100 - alloc
+    999000 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+       100 - alloc
+       300 - gap
+       100 - alloc
+       150 - alloc
+        50 - gap
+       100 - alloc
+       100 - gap
+       100 - alloc
+    999000 - gap
+
+-----------------------
+PRINTING EXP LIST
+       100 - alloc
+       300 - gap
+       100 - alloc
+       150 - alloc
+        50 - gap
+       100 - alloc
+       100 - gap
+       100 - alloc
+    999000 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+
+PRINTING SEGS LIST
+   1000000 - gap
+
+-----------------------
+PRINTING EXP LIST
+   1000000 - gap
+Asserting Memory is Equal
+Attempting to Free Segments
+Proceeding
+[  PASSED  ] 24 test(s).
+[  FAILED  ] 1 test(s), listed below:
+[  FAILED  ] test_pool_store_smoketest
+
+ 1 FAILED TEST(S)
+
+[      --> ] Closing pool
+Done Freeing All Memory
+COMPLETED!
+[       OK ] test_pool_scenario19
+[==========] 25 test(s) run.
+
+Process finished with exit code 1
+
